@@ -81,21 +81,57 @@
 			 <!-- document.write("it is not a prime number", number) -->
 		  <!-- } -->
 		  
-		  var prime=parseInt(prompt("enter the number"));
-			var a=0;
-			for(i=2;i<prime;i++){
-				if(prime%i==0){
-					a=1;
-					break;
-					}
-					}
-					if(a==1){
-						console.log("it is not prime number");
-						}
-						else{
-						console.log("it is prime number");
-						}
+		  <!-- var prime=parseInt(prompt("enter the number")); -->
+			<!-- var a=0; -->
+			<!-- for(i=2;i<prime;i++){ -->
+				<!-- if(prime%i==0){ -->
+					<!-- a=1; -->
+					<!-- break; -->
+					<!-- } -->
+					<!-- } -->
+					<!-- if(a==1){ -->
+						<!-- console.log("it is not prime number"); -->
+						<!-- } -->
+						<!-- else{ -->
+						<!-- console.log("it is prime number"); -->
+						<!-- } -->
 				  
+				  
+
+		let m1=parseInt(prompt("Enter the number"));
+		let m2=parseInt(prompt("Enter the number"));
+		let m3=prompt("Enter the operator");
+		
+		function add(m1,m2){
+			console.log(m1+m2);
+		}
+		function subt(m1,m2){
+		      console.log(m1-m2);
+		}
+		function mul(m1,m2){
+			console.log(m1*m2);
+		}
+        function div(m1,m2){
+			console.log(m1/m2);
+		}
+        function remain(m1,m2){
+			console.log(m1%m2);
+		}
+		if(m3=='+'){
+			add(m1,m2);
+		}
+		else if(m3=='-'){
+			sub(m1,m2);
+		}
+		else if(m3=='*'){
+			mul(m1,m2);
+		}
+        else if(m3=='/'){
+			div(m1,m2);
+		}
+        else if(m3=='%'){
+			remain(m1,m2);
+		}
 </script>
 </body>
 </html>
